@@ -1,8 +1,8 @@
-rootProject.name = "ExampleMod"
+rootProject.name = "ToggleSprint"
 
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven("https://jitpack.io")
+        maven("https://repo.weavemc.dev/releases")
     }
 }

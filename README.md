@@ -1,5 +1,2 @@
-# Weave Kotlin
-Weave example mod made with [Kotlin](https://kotlinlang.org)
-
-## Build
-> Gradle: `Tasks > build > build`
+# WeaveToggleSprint
+This is a simple mod that adds toggle sprint to the game for Weave 1.0. It's for Minecraft 1.8.9.

@@ -1,21 +1,33 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
-    id("com.github.weave-mc.weave-gradle") version "fac948db7f"
+    kotlin("jvm") version "1.9.23"
+    id("net.weavemc.gradle") version "1.0.0-PRE2"
 }
 
-group = "com.example"
+group = "me.tryfle"
 version = "1.0"
 
-minecraft.version("1.8.9")
+weave {
+    configure {
+        name = "togglesprint"
+        modId = "togglesprint"
+        entryPoints = listOf("me.tryfle.togglesprint.Main")
+        mixinConfigs = listOf("togglesprint.mixins.json")
+        mcpMappings()
+    }
+    version("1.8.9")
+}
 
 repositories {
-    maven("https://jitpack.io")
-    maven("https://repo.spongepowered.org/maven/")
+    mavenCentral()
+    maven("https://repo.weavemc.dev/releases")
+    maven("https://repo.spongepowered.org/maven")
 }
 
 dependencies {
-    compileOnly("com.github.weave-mc:weave-loader:v0.2.5")
+    implementation("net.weavemc.api:common:1.0.0-PRE2")
+    implementation("net.weavemc:internals:1.0.0-PRE2")
     compileOnly("org.spongepowered:mixin:0.8.5")
+
 }
 
 kotlin {

@@ -1,0 +1,7 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.tryfle.togglesprint.mixin",
+  "mixins": [
+    "MinecraftMixin"
+  ]
+}
