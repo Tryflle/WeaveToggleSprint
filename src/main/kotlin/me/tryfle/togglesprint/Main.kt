@@ -4,10 +4,12 @@ import net.weavemc.api.ModInitializer
 import java.lang.instrument.Instrumentation
 
 class Main : ModInitializer {
-
-    override fun preInit(inst: Instrumentation) {
+    
+    override fun init() {
         println("[ToggleSprint] Loaded.")
     }
+
+    override fun preInit(inst: Instrumentation) {}
 
     companion object {
         var toggled = false
