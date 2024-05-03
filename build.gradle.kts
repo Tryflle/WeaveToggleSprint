@@ -24,8 +24,8 @@ repositories {
 }
 
 dependencies {
-    implementation("net.weavemc.api:common:1.0.0-PRE2")
-    implementation("net.weavemc:internals:1.0.0-PRE2")
+    implementation("net.weavemc.api:common:1.0.0-b.2")
+    implementation("net.weavemc:internals:1.0.0-b.2")
     compileOnly("org.spongepowered:mixin:0.8.5")
 
 }

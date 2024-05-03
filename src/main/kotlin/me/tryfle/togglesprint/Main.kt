@@ -4,6 +4,7 @@ import net.weavemc.api.ModInitializer
 import java.lang.instrument.Instrumentation
 
 class Main : ModInitializer {
+	override fun init() {}
 
     override fun preInit(inst: Instrumentation) {
         println("[ToggleSprint] Loaded.")
